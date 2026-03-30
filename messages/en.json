@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Home",
+    "works": "Works",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "home": {
+    "eyebrow": "Contemporary art",
+    "title": "Nadia Chellaoui, an abstract and immersive visual world.",
+    "subtitle": "A minimalist and bold practice where texture, color, and gesture shape poetic emotion.",
+    "ctaWorks": "View works",
+    "ctaContact": "Get in touch",
+    "scrollLabel": "Scroll"
+  },
+  "works": {
+    "title": "Works",
+    "intro": "A curated selection of recent series blending abstraction, texture, and luminous compositions.",
+    "openArtwork": "Open artwork",
+    "closeLightbox": "Close",
+    "previous": "Prev",
+    "next": "Next"
+  },
+  "about": {
+    "title": "About",
+    "eyebrow": "Artist Statement",
+    "quote": "Nadia Chellaoui develops a visual language where color, gesture, and silence converge.",
+    "bio": "Her work explores the tension between abstraction and memory, creating immersive compositions that evoke intimacy and distance. Through layered textures and controlled light, each piece invites a contemplative encounter, like walking through a quiet exhibition room.",
+    "portraitAlt": "Artist portrait in an atelier"
+  },
+  "contact": {
+    "title": "Contact",
+    "eyebrow": "Studio Correspondence",
+    "intro": "For exhibitions, commissions, and collaborations, contact the studio.",
+    "emailLabel": "Email",
+    "instagramLabel": "Instagram",
+    "locationLabel": "Location",
+    "city": "Rabat, Morocco",
+    "formName": "Name",
+    "formEmail": "Email",
+    "formMessage": "Message",
+    "formSubmit": "Send Message",
+    "emailValue": "contact@nadiachellaouiartiste.com",
+    "instagramValue": "@nadiachellaoui.art"
+  },
+  "footer": {
+    "artistName": "Nadia Chellaoui",
+    "tagline": "A visual exploration of color, gesture, and silence.",
+    "navTitle": "Navigation",
+    "socialTitle": "Social",
+    "emailLabel": "Email",
+    "emailValue": "contact@nadiachellaouiartiste.com",
+    "instagramLabel": "Instagram",
+    "behanceLabel": "Behance",
+    "facebookLabel": "Facebook",
+    "instagramHandle": "@nadiachellaoui.art",
+    "behanceHandle": "/nadiachellaoui",
+    "facebookHandle": "/nadiachellaoui",
+    "rights": "© Nadia Chellaoui Artiste. All rights reserved."
+  },
+  "social": {
+    "title": "Follow me",
+    "whatsapp": "WhatsApp",
+    "whatsappHello": "Hello Nadia, I would like to contact you.",
+    "whatsappPlaceholder": "Write your message...",
+    "whatsappClose": "Close",
+    "whatsappSend": "Send"
+  }
+}

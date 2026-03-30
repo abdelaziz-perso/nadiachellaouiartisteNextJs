@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-ivory text-ink antialiased;
+}
+
+[dir="rtl"] body {
+  font-family: var(--font-arabic), var(--font-inter), system-ui, sans-serif;
+}
+
+.container-padding {
+  @apply px-5 sm:px-8 lg:px-14;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Subtle fixed texture adds gallery-like material depth. */
+.grain-overlay {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 60;
+  opacity: 0.16;
+  background-image: radial-gradient(circle at 20% 10%, rgba(0, 0, 0, 0.1) 0, transparent 55%),
+    radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.08) 0, transparent 60%);
+  mix-blend-mode: multiply;
+}
+
+.btn-premium {
+  @apply transition-all duration-500 ease-out hover:scale-[1.03] hover:opacity-90 active:scale-[0.98] touch-manipulation;
+}
+
+.link-underline {
+  position: relative;
+  transition: color 300ms ease;
+}
+
+.link-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 420ms cubic-bezier(0.22, 1, 0.36, 1);
+  background: currentColor;
+  opacity: 0.65;
+}
+
+[dir="rtl"] .link-underline::after {
+  left: auto;
+  right: 0;
+  transform-origin: right center;
+}
+
+.link-underline:hover::after,
+.link-underline:focus-visible::after {
+  transform: scaleX(1);
+}
+
+.hero-scroll-indicator {
+  animation: hero-bounce 2.5s ease-in-out infinite;
+}
+
+@keyframes hero-bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(6px);
+    opacity: 1;
+  }
+}

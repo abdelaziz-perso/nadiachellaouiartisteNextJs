@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "works": "Oeuvres",
+    "about": "A propos",
+    "contact": "Contact"
+  },
+  "home": {
+    "eyebrow": "Art contemporain",
+    "title": "Nadia Chellaoui, univers abstrait et immersif.",
+    "subtitle": "Une approche minimaliste, audacieuse et sensible ou la matiere, la couleur et le geste racontent une emotion.",
+    "ctaWorks": "Voir les oeuvres",
+    "ctaContact": "Prendre contact",
+    "scrollLabel": "Defiler"
+  },
+  "works": {
+    "title": "Oeuvres",
+    "intro": "Selection de series recentes, entre abstraction, textures organiques et compositions lumineuses.",
+    "openArtwork": "Ouvrir l'oeuvre",
+    "closeLightbox": "Fermer",
+    "previous": "Prec.",
+    "next": "Suiv."
+  },
+  "about": {
+    "title": "A propos",
+    "eyebrow": "Note de l'artiste",
+    "quote": "Nadia Chellaoui developpe un langage visuel ou la couleur, le geste et le silence se rejoignent.",
+    "bio": "Son travail explore la tension entre abstraction et memoire, en composant des espaces immersifs qui evoquent a la fois l'intime et la distance. Par des textures superposees et une lumiere maitrisee, chaque oeuvre propose une experience contemplative proche d'un parcours en galerie.",
+    "portraitAlt": "Portrait de l'artiste dans son atelier"
+  },
+  "contact": {
+    "title": "Contact",
+    "eyebrow": "Correspondance du studio",
+    "intro": "Pour une exposition, une commande ou une collaboration, contactez le studio.",
+    "emailLabel": "E-mail",
+    "instagramLabel": "Instagram",
+    "locationLabel": "Lieu",
+    "city": "Rabat, Maroc",
+    "formName": "Nom",
+    "formEmail": "E-mail",
+    "formMessage": "Message",
+    "formSubmit": "Envoyer le message",
+    "emailValue": "contact@nadiachellaouiartiste.com",
+    "instagramValue": "@nadiachellaoui.art"
+  },
+  "footer": {
+    "artistName": "Nadia Chellaoui",
+    "tagline": "Une exploration visuelle de la couleur, du geste et du silence.",
+    "navTitle": "Navigation",
+    "socialTitle": "Reseaux",
+    "emailLabel": "E-mail",
+    "emailValue": "contact@nadiachellaouiartiste.com",
+    "instagramLabel": "Instagram",
+    "behanceLabel": "Behance",
+    "facebookLabel": "Facebook",
+    "instagramHandle": "@nadiachellaoui.art",
+    "behanceHandle": "/nadiachellaoui",
+    "facebookHandle": "/nadiachellaoui",
+    "rights": "© Nadia Chellaoui Artiste. Tous droits reserves."
+  },
+  "social": {
+    "title": "Suivez-moi",
+    "whatsapp": "WhatsApp",
+    "whatsappHello": "Bonjour Nadia, je souhaite vous contacter.",
+    "whatsappPlaceholder": "Ecrivez votre message...",
+    "whatsappClose": "Fermer",
+    "whatsappSend": "Envoyer"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "nav": {
+    "home": "الرئيسية",
+    "works": "الأعمال",
+    "about": "نبذة",
+    "contact": "تواصل"
+  },
+  "home": {
+    "eyebrow": "فن معاصر",
+    "title": "ناديا شلاوي، عالم بصري تجريدي وغامر.",
+    "subtitle": "مقاربة فنية بسيطة وجريئة حيث تتفاعل المادة واللون والحركة لصناعة إحساس بصري حي.",
+    "ctaWorks": "استكشاف الأعمال",
+    "ctaContact": "تواصل الآن",
+    "scrollLabel": "تابع التمرير"
+  },
+  "works": {
+    "title": "الأعمال",
+    "intro": "مجموعة منتقاة من السلاسل الحديثة بين التجريد والملمس والتكوينات الضوئية.",
+    "openArtwork": "فتح العمل",
+    "closeLightbox": "إغلاق",
+    "previous": "السابق",
+    "next": "التالي"
+  },
+  "about": {
+    "title": "نبذة",
+    "eyebrow": "رؤية الفنانة",
+    "quote": "تطوّر ناديا شلاوي لغة بصرية تلتقي فيها الألوان والحركة والصمت.",
+    "bio": "يستكشف عملها التوتر بين التجريد والذاكرة، ليصنع تكوينات غامرة تستدعي الإحساس بالقرب والاتساع في آن واحد. ومن خلال الطبقات والملامس والضوء الهادئ، تتحول كل قطعة إلى تجربة تأملية تشبه المرور داخل معرض معاصر.",
+    "portraitAlt": "صورة للفنانة داخل المرسم"
+  },
+  "contact": {
+    "title": "تواصل",
+    "eyebrow": "مراسلات الاستوديو",
+    "intro": "للمعارض أو التكليفات الفنية أو التعاونات، يرجى التواصل مع الاستوديو.",
+    "emailLabel": "البريد الإلكتروني",
+    "instagramLabel": "إنستغرام",
+    "locationLabel": "الموقع",
+    "city": "الرباط، المغرب",
+    "formName": "الاسم",
+    "formEmail": "البريد الإلكتروني",
+    "formMessage": "الرسالة",
+    "formSubmit": "إرسال الرسالة",
+    "emailValue": "contact@nadiachellaouiartiste.com",
+    "instagramValue": "@nadiachellaoui.art"
+  },
+  "footer": {
+    "artistName": "ناديا شلاوي",
+    "tagline": "استكشاف بصري للون والحركة والصمت.",
+    "navTitle": "التصفح",
+    "socialTitle": "المنصات",
+    "emailLabel": "البريد الإلكتروني",
+    "emailValue": "contact@nadiachellaouiartiste.com",
+    "instagramLabel": "إنستغرام",
+    "behanceLabel": "بيهانس",
+    "facebookLabel": "فيسبوك",
+    "instagramHandle": "@nadiachellaoui.art",
+    "behanceHandle": "/nadiachellaoui",
+    "facebookHandle": "/nadiachellaoui",
+    "rights": "© ناديا شلاوي آرتيست. جميع الحقوق محفوظة."
+  },
+  "social": {
+    "title": "تابعني",
+    "whatsapp": "واتساب",
+    "whatsappHello": "مرحبا ناديا، أرغب في التواصل معك.",
+    "whatsappPlaceholder": "اكتب رسالتك...",
+    "whatsappClose": "إغلاق",
+    "whatsappSend": "إرسال"
+  }
+}
