@@ -8,6 +8,7 @@ import LanguageSwitcher from "@/components/LanguageSwitcher";
 import LocaleSync from "@/components/LocaleSync";
 import MobileNav from "@/components/MobileNav";
 import PageTransition from "@/components/PageTransition";
+import { InstagramIcon } from "@/components/SocialIcons";
 import StickyHeader from "@/components/StickyHeader";
 import WhatsAppWidget from "@/components/WhatsAppWidget";
 import { getDictionary, i18n, isValidLocale, type Locale } from "@/lib/i18n";
@@ -34,37 +35,50 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   return (
     <div className="min-h-screen">
       <LocaleSync locale={locale as Locale} locales={i18n.locales} />
+      <a
+        href="#main_content"
+        className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-black focus:px-3 focus:py-2 focus:text-sm focus:text-white"
+      >
+        Skip to main content
+      </a>
       <div className="grain-overlay" />
       <CustomCursor />
 
       <StickyHeader>
-        <div className="mx-auto grid w-full max-w-[1500px] grid-cols-[1fr_auto] items-center gap-4 px-6 py-3 xl:px-12 lg:grid-cols-[1fr_auto_1fr]">
+        <div className="mx-auto flex w-full max-w-[1700px] items-center justify-between px-8 py-4 xl:px-12">
           <BrandMark locale={locale} label="Nadia Chellaoui" className="self-center justify-self-start" />
 
-          <div className="hidden justify-self-center lg:block">
-            <DesktopNav
-              locale={locale}
-              homeLabel={dictionary.nav.home}
-              worksLabel={dictionary.nav.works}
-              aboutLabel={dictionary.nav.about}
-              contactLabel={dictionary.nav.contact}
-            />
+          <div className="hidden items-center gap-6 lg:flex">
+            <DesktopNav locale={locale} />
+            <Link
+              href="https://instagram.com/nadiachellaoui_artiste"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-neutral-300 p-2 text-neutral-700 transition-all duration-200 ease-in-out hover:bg-black/5 hover:text-neutral-900"
+              aria-label={dictionary.footer.instagramLabel}
+            >
+              <InstagramIcon className="h-4 w-4" />
+            </Link>
+            <LanguageSwitcher locale={locale as Locale} />
           </div>
 
-          <div className="flex items-center gap-2 justify-self-end">
-            <LanguageSwitcher locale={locale as Locale} />
+          <div className="flex items-center gap-3 lg:hidden">
             <MobileNav
               locale={locale}
-              homeLabel={dictionary.nav.home}
-              worksLabel={dictionary.nav.works}
-              aboutLabel={dictionary.nav.about}
-              contactLabel={dictionary.nav.contact}
+              menuLabel={locale === "ar" ? "القائمة" : locale === "fr" ? "Menu" : "Menu"}
+              closeLabel={locale === "ar" ? "إغلاق" : locale === "fr" ? "Fermer" : "Close"}
+              socialPrimaryLabel={dictionary.footer.instagramLabel}
+              socialPrimaryHref="https://instagram.com/nadiachellaoui_artiste"
+              socialSecondaryLabel={dictionary.footer.facebookLabel}
+              socialSecondaryHref="https://web.facebook.com/nadia.chellaoui.artiste/?_rdc=1&_rdr#"
+              socialTertiaryLabel="Website"
+              socialTertiaryHref="https://nadiachellaoui.com/en/"
             />
           </div>
         </div>
       </StickyHeader>
 
-      <main className="container-padding mx-auto w-full max-w-6xl py-7 sm:py-10">
+      <main id="main_content" className="container-padding mx-auto w-full max-w-6xl">
         <PageTransition>{children}</PageTransition>
       </main>
 
@@ -78,18 +92,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
         emailLabel={dictionary.footer.emailLabel}
         emailValue={dictionary.footer.emailValue}
         instagramLabel={dictionary.footer.instagramLabel}
-        behanceLabel={dictionary.footer.behanceLabel}
         facebookLabel={dictionary.footer.facebookLabel}
         instagramHandle={dictionary.footer.instagramHandle}
-        behanceHandle={dictionary.footer.behanceHandle}
         facebookHandle={dictionary.footer.facebookHandle}
         rights={dictionary.footer.rights}
-        navLabels={{
-          home: dictionary.nav.home,
-          works: dictionary.nav.works,
-          about: dictionary.nav.about,
-          contact: dictionary.nav.contact
-        }}
       />
 
       <WhatsAppWidget

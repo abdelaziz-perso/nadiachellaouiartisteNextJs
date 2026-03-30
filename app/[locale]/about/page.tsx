@@ -6,5 +6,5 @@ type AboutPageProps = {
 
 export default async function AboutPage({ params }: AboutPageProps) {
   const { locale } = await params;
-  return <ClientRedirect href={`/${locale}/`} />;
+  return <ClientRedirect href={`/${locale}/nadia-chellaoui`} />;
 }

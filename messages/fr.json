@@ -41,7 +41,7 @@
     "formMessage": "Message",
     "formSubmit": "Envoyer le message",
     "emailValue": "contact@nadiachellaouiartiste.com",
-    "instagramValue": "@nadiachellaoui.art"
+    "instagramValue": "@nadiachellaoui_artiste"
   },
   "footer": {
     "artistName": "Nadia Chellaoui",
@@ -53,9 +53,9 @@
     "instagramLabel": "Instagram",
     "behanceLabel": "Behance",
     "facebookLabel": "Facebook",
-    "instagramHandle": "@nadiachellaoui.art",
+    "instagramHandle": "@nadiachellaoui_artiste",
     "behanceHandle": "/nadiachellaoui",
-    "facebookHandle": "/nadiachellaoui",
+    "facebookHandle": "/nadia.chellaoui.artiste",
     "rights": "© Nadia Chellaoui Artiste. Tous droits reserves."
   },
   "social": {

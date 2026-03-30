@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import BrandMark from "@/components/BrandMark";
+import { FacebookIcon, InstagramIcon, WebsiteIcon } from "@/components/SocialIcons";
 
 type FooterSectionProps = {
   locale: string;
@@ -14,18 +15,10 @@ type FooterSectionProps = {
   emailLabel: string;
   emailValue: string;
   instagramLabel: string;
-  behanceLabel: string;
   facebookLabel: string;
   instagramHandle: string;
-  behanceHandle: string;
   facebookHandle: string;
   rights: string;
-  navLabels: {
-    home: string;
-    works: string;
-    about: string;
-    contact: string;
-  };
 };
 
 export default function FooterSection({
@@ -38,15 +31,22 @@ export default function FooterSection({
   emailLabel,
   emailValue,
   instagramLabel,
-  behanceLabel,
   facebookLabel,
   instagramHandle,
-  behanceHandle,
   facebookHandle,
-  rights,
-  navLabels
+  rights
 }: FooterSectionProps) {
   const align = isRtl ? "md:text-right md:items-end" : "md:text-left md:items-start";
+  const footerNavItems = [
+    { label: "Artworks", href: `/${locale}/artworks` },
+    { label: "Exhibitions", href: `/${locale}/exhibitions` },
+    { label: "Art fairs", href: `/${locale}/art-fairs` },
+    { label: "CV", href: `/${locale}/cv` },
+    { label: "ABOUT", href: `/${locale}/nadia-chellaoui` },
+    { label: "Bibliography", href: `/${locale}/bibliography` },
+    { label: "Press", href: `/${locale}/press` },
+    { label: "CONTACT", href: `/${locale}/contact` }
+  ];
 
   return (
     <footer className="border-t border-black/10 bg-neutral-50/70 px-6 py-16">
@@ -59,7 +59,7 @@ export default function FooterSection({
       >
         <div className="grid gap-10 text-center md:grid-cols-3 md:items-start md:text-left">
           <div className={`flex flex-col items-center gap-4 ${align}`}>
-            <BrandMark locale={locale} label={artistName} textClassName="text-2xl" />
+            <BrandMark locale={locale} label={artistName} textClassName="text-2xl text-ink" />
             <p className="max-w-sm text-sm leading-relaxed text-ink/65">{tagline}</p>
             <p className="text-xs uppercase tracking-[0.22em] text-ink/45">{emailLabel}</p>
             <a href={`mailto:${emailValue}`} className="link-underline text-sm text-ink/80">
@@ -69,48 +69,44 @@ export default function FooterSection({
 
           <div className={`flex flex-col items-center gap-4 ${align}`}>
             <p className="text-xs uppercase tracking-[0.25em] text-ink/45">{navTitle}</p>
-            <div className="flex flex-col gap-3 text-sm text-ink/80">
-              <Link className="link-underline" href={`/${locale}`}>
-                {navLabels.home}
-              </Link>
-              <Link className="link-underline" href={`/${locale}#works`}>
-                {navLabels.works}
-              </Link>
-              <Link className="link-underline" href={`/${locale}#about`}>
-                {navLabels.about}
-              </Link>
-              <Link className="link-underline" href={`/${locale}#contact`}>
-                {navLabels.contact}
-              </Link>
+            <div className="grid grid-cols-1 gap-x-8 gap-y-3 text-sm text-ink/80 sm:grid-cols-2">
+              {footerNavItems.map((item) => (
+                <Link key={item.href} className="link-underline" href={item.href}>
+                  {item.label}
+                </Link>
+              ))}
             </div>
           </div>
 
           <div className={`flex flex-col items-center gap-4 ${align}`}>
             <p className="text-xs uppercase tracking-[0.25em] text-ink/45">{socialTitle}</p>
-            <div className="flex flex-col gap-3 text-sm text-ink/80">
+            <div className="flex items-center gap-3 text-sm text-ink/80">
               <Link
-                href="https://instagram.com/nadiachellaoui.art"
+                href="https://instagram.com/nadiachellaoui_artiste"
                 target="_blank"
                 rel="noreferrer"
-                className="link-underline transition-all duration-300 hover:-translate-y-0.5 hover:opacity-75"
+                className="inline-flex items-center justify-center rounded-full border border-black/20 p-2 transition-all duration-300 hover:-translate-y-0.5 hover:bg-black/5 hover:opacity-90"
+                aria-label={`${instagramLabel} ${instagramHandle}`}
               >
-                {instagramLabel} {instagramHandle}
+                <InstagramIcon className="h-4 w-4" />
               </Link>
               <Link
-                href="https://www.behance.net/nadiachellaoui"
+                href="https://web.facebook.com/nadia.chellaoui.artiste/?_rdc=1&_rdr#"
                 target="_blank"
                 rel="noreferrer"
-                className="link-underline transition-all duration-300 hover:-translate-y-0.5 hover:opacity-75"
+                className="inline-flex items-center justify-center rounded-full border border-black/20 p-2 transition-all duration-300 hover:-translate-y-0.5 hover:bg-black/5 hover:opacity-90"
+                aria-label={`${facebookLabel} ${facebookHandle}`}
               >
-                {behanceLabel} {behanceHandle}
+                <FacebookIcon className="h-4 w-4" />
               </Link>
               <Link
-                href="https://facebook.com/nadiachellaoui"
+                href="https://nadiachellaoui.com/en/"
                 target="_blank"
                 rel="noreferrer"
-                className="link-underline transition-all duration-300 hover:-translate-y-0.5 hover:opacity-75"
+                className="inline-flex items-center justify-center rounded-full border border-black/20 p-2 transition-all duration-300 hover:-translate-y-0.5 hover:bg-black/5 hover:opacity-90"
+                aria-label="Website nadiachellaoui.com"
               >
-                {facebookLabel} {facebookHandle}
+                <WebsiteIcon className="h-4 w-4" />
               </Link>
             </div>
           </div>

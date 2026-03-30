@@ -6,5 +6,5 @@ type WorksPageProps = {
 
 export default async function WorksPage({ params }: WorksPageProps) {
   const { locale } = await params;
-  return <ClientRedirect href={`/${locale}/`} />;
+  return <ClientRedirect href={`/${locale}/artworks`} />;
 }

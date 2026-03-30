@@ -52,7 +52,7 @@ export default async function HomePage({ params }: HomePageProps) {
   const dictionary = await getDictionary(locale);
 
   return (
-    <section className="space-y-8 sm:space-y-12">
+    <section className="space-y-10 pb-16 sm:space-y-14 sm:pb-20">
       <HeroSection
         locale={locale}
         eyebrow={t(dictionary, "home.eyebrow")}
@@ -62,6 +62,12 @@ export default async function HomePage({ params }: HomePageProps) {
         ctaContact={t(dictionary, "home.ctaContact")}
         scrollLabel={t(dictionary, "home.scrollLabel")}
       />
+
+      <div id="exhibitions" className="h-0 scroll-mt-28" />
+      <div id="art-fairs" className="h-0 scroll-mt-28" />
+      <div id="cv" className="h-0 scroll-mt-28" />
+      <div id="bibliography" className="h-0 scroll-mt-28" />
+      <div id="press" className="h-0 scroll-mt-28" />
 
       <section id="works" className="space-y-6 scroll-mt-28 sm:space-y-8">
         <Reveal>

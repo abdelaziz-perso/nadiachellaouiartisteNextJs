@@ -131,6 +131,25 @@ export default function ContactSection({
           </div>
         </motion.form>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.65, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+        className="mt-6 overflow-hidden rounded-2xl border border-black/10 sm:mt-8"
+      >
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.5178962740915!2d-7.639372324177329!3d33.59186457333378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d2edb166e795%3A0x8f7623c91e3e1231!2sNADIA%20CHELLAOUI!5e0!3m2!1sen!2sma!4v1774881201949!5m2!1sen!2sma"
+          width="400"
+          height="300"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          className="h-72 w-full sm:h-80"
+        />
+      </motion.div>
     </section>
   );
 }

@@ -20,8 +20,8 @@ export default function StickyHeader({ children }: StickyHeaderProps) {
     <header
       className={`sticky top-0 z-30 border-b transition-all duration-500 ${
         isScrolled
-          ? "border-black/10 bg-ivory/75 shadow-sm backdrop-blur-xl"
-          : "border-transparent bg-ivory/45 backdrop-blur-md"
+          ? "border-neutral-200/80 bg-[#f5f5f5]/90 shadow-[0_4px_20px_rgba(0,0,0,0.04)] backdrop-blur-xl"
+          : "border-neutral-200/50 bg-[#f5f5f5]/75 backdrop-blur-md"
       }`}
     >
       {children}

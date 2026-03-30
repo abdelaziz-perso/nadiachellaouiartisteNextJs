@@ -35,7 +35,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr" dir="ltr">
+    <html lang="fr" dir="ltr" data-scroll-behavior="smooth">
       <body className={`${inter.variable} ${playfair.variable} ${notoArabic.variable}`}>{children}</body>
     </html>
   );
