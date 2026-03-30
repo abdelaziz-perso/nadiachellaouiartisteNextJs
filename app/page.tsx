@@ -1,5 +1,5 @@
-import { redirect } from "next/navigation";
+import ClientRedirect from "@/components/ClientRedirect";
 
 export default function RootRedirectPage() {
-  redirect("/fr");
+  return <ClientRedirect href="/fr/" />;
 }

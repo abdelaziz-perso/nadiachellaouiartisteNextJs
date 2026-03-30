@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import ClientRedirect from "@/components/ClientRedirect";
 
 type ContactPageProps = {
   params: Promise<{ locale: string }>;
@@ -6,5 +6,5 @@ type ContactPageProps = {
 
 export default async function ContactPage({ params }: ContactPageProps) {
   const { locale } = await params;
-  redirect(`/${locale}`);
+  return <ClientRedirect href={`/${locale}/`} />;
 }

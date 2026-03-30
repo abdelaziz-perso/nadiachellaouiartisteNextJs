@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import ClientRedirect from "@/components/ClientRedirect";
 
 type AboutPageProps = {
   params: Promise<{ locale: string }>;
@@ -6,5 +6,5 @@ type AboutPageProps = {
 
 export default async function AboutPage({ params }: AboutPageProps) {
   const { locale } = await params;
-  redirect(`/${locale}`);
+  return <ClientRedirect href={`/${locale}/`} />;
 }

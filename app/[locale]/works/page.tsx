@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import ClientRedirect from "@/components/ClientRedirect";
 
 type WorksPageProps = {
   params: Promise<{ locale: string }>;
@@ -6,5 +6,5 @@ type WorksPageProps = {
 
 export default async function WorksPage({ params }: WorksPageProps) {
   const { locale } = await params;
-  redirect(`/${locale}`);
+  return <ClientRedirect href={`/${locale}/`} />;
 }
