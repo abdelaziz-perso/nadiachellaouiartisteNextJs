@@ -82,7 +82,7 @@ export default function HeroSection({
         </div>
 
         <div className="absolute inset-x-0 bottom-0 z-10">
-          <div className="mx-auto w-full max-w-6xl px-5 pb-10 sm:px-8 sm:pb-14 lg:px-14">
+          <div className="mx-auto w-full max-w-6xl px-5 pb-6 sm:px-8 sm:pb-8 lg:px-14">
             <motion.p
               initial={{ opacity: 0, y: 18 }}
               animate={{ opacity: 1, y: 0 }}
@@ -109,15 +109,6 @@ export default function HeroSection({
             >
               {subtitle}
             </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 0.42 }}
-              className="mt-4 text-[11px] uppercase tracking-[0.25em] text-white/70"
-            >
-              Casablanca, Morocco
-            </motion.div>
 
             <motion.div
               initial={{ opacity: 0, y: 16 }}

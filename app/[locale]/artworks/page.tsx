@@ -2,31 +2,36 @@ import { notFound } from "next/navigation";
 import ArtworkGrid from "@/components/artworks/ArtworkGrid";
 import { isValidLocale } from "@/lib/i18n";
 
-const artworkCategories = [
+const seriesCategories = [
   {
-    label: "Painting",
-    imageSrc: "https://images.unsplash.com/photo-1578301978018-3005759f48f7?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Colorful abstract painting details"
+    label: "Serie 1",
+    imageSrc: "/serie1/FullSizeRender.jpeg",
+    imageAlt: "Serie 1 artwork",
+    href: "/artworks/serie1"
   },
   {
-    label: "Sculpture",
-    imageSrc: "https://images.unsplash.com/photo-1545239351-1141bd82e8a6?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Modern sculpture in neutral gallery"
+    label: "Serie 2",
+    imageSrc: "/serie2/IMG_1945.jpeg",
+    imageAlt: "Serie 2 artwork",
+    href: "/artworks/serie2"
   },
   {
-    label: "Photography",
-    imageSrc: "https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Photography print displayed in art space"
+    label: "Serie 3",
+    imageSrc: "/serie3/IMG_1018.jpeg",
+    imageAlt: "Serie 3 artwork",
+    href: "/artworks/serie3"
   },
   {
-    label: "Video",
-    imageSrc: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Video art projection setup in dark room"
+    label: "Serie 4",
+    imageSrc: "/serie4/IMG_1942.jpeg",
+    imageAlt: "Serie 4 artwork",
+    href: "/artworks/serie4"
   },
   {
-    label: "Digital",
-    imageSrc: "https://images.unsplash.com/photo-1516110833967-0b5716ca1387?auto=format&fit=crop&w=1200&q=80",
-    imageAlt: "Digital artwork shown on modern display"
+    label: "Serie 5",
+    imageSrc: "/serie5/IMG_2364.jpeg",
+    imageAlt: "Serie 5 artwork",
+    href: "/artworks/serie5"
   }
 ];
 
@@ -39,15 +44,22 @@ export default async function ArtworksPage({ params }: ArtworksPageProps) {
   if (!isValidLocale(locale)) {
     notFound();
   }
+  const helperText =
+    locale === "fr"
+      ? "Cliquez sur une série pour ouvrir sa galerie complète."
+      : locale === "ar"
+        ? "انقر على أي سلسلة لفتح المعرض الكامل."
+        : "Click any series to open the full gallery.";
 
   return (
     <div className="min-h-screen bg-[#f5f5f5] px-5 pb-12 pt-6 text-neutral-900 sm:px-8 lg:px-12 xl:px-16">
-      <section className="pt-4 sm:pt-6">
-        <h1 className="pl-1 text-xl uppercase tracking-[0.45em] text-neutral-900 sm:text-2xl">ARTWORKS</h1>
+      <section className="space-y-3 pt-4 sm:pt-6">
+        <h1 className="pl-1 text-xl uppercase tracking-[0.45em] text-neutral-900 sm:text-2xl">SERIES</h1>
+        <p className={`pl-1 text-sm text-neutral-700 ${locale === "ar" ? "text-right" : ""}`}>{helperText}</p>
       </section>
 
       <section className="pt-10">
-        <ArtworkGrid items={artworkCategories} />
+        <ArtworkGrid items={seriesCategories.map((item) => ({ ...item, href: `/${locale}${item.href}` }))} />
       </section>
     </div>
   );

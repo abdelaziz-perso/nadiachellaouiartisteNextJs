@@ -5,7 +5,7 @@ type ArtworkNavbarProps = {
 };
 
 const navItems = [
-  { label: "Artworks", href: "artworks" },
+  { label: "Series", href: "artworks" },
   { label: "Exhibitions", href: "exhibitions" },
   { label: "Art Fairs", href: "art-fairs" },
   { label: "CV", href: "cv" },

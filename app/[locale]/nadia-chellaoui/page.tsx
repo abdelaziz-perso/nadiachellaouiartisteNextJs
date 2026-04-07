@@ -106,11 +106,10 @@ const aboutContent: Record<Locale, AboutPageContent> = {
     eyebrow: "About",
     title: "The artist Nadia Chellaoui",
     introParagraphs: [
-      "In 2007, Nadia Chellaoui gave herself fully to painting, moving from formal training to an instinctive artistic practice.",
-      "Each brushstroke shaped a more personal expression and affirmed an increasingly distinctive visual identity.",
-      "In 2017, driven by the desire to create relentlessly, she expanded her universe into leather goods with her first bag, Calips'Oh.",
-      "She then developed a lineage of bags inspired by mythological figures, continuing her signature dialogue between symbols, shape, and color.",
-      "This approach creates a deliberate bridge between painting and craft through recurring motifs: the heart, the eye, the mouth, the dove, and the star."
+      "Nadia Chellaoui is a Moroccan painter whose universe stands out through the emotional intensity of her works, the power of the gaze, and the vibration of color. Self-taught, she has developed over the years a singular pictorial language where sensitivity, materiality, identity, and the depth of the human soul come together.",
+      "Born in Rabat and based in Casablanca, she builds a deeply inhabited body of work, driven by a constant search for authenticity. Her canvases, often marked by expressive faces and a vibrant palette dominated by blue, explore femininity, memory, interiority, and silent emotions. Through her painting, Nadia Chellaoui seeks less to represent than to reveal, giving form to the invisible and opening a space of intimate resonance with the viewer.",
+      "Her artistic journey has unfolded in Morocco and internationally through several landmark exhibitions. The year 2025 marks an important stage in her visibility, with a collective exhibition in Rome in February, participation in art3f Milan in March, a presence at MUST Museum - Museo Storico di Lecce in May, and a two-month solo exhibition in Venice, a key moment of maturity and recognition in her career. This momentum continued with a collective exhibition in Madrid in November and an announced presence at the Carrousel du Louvre in Paris, confirming the international anchoring of her work.",
+      "Through each of her creations, Nadia Chellaoui affirms a sensitive and embodied painting, where color becomes language, the gaze becomes passage, and the work becomes a meeting place between emotion, memory, and humanity."
     ],
     introImage: "https://nadiachellaoui.com/wp-content/uploads/2025/08/nc.jpg",
     introImageAlt: "Portrait of Nadia Chellaoui",
@@ -169,11 +168,10 @@ const aboutContent: Record<Locale, AboutPageContent> = {
     eyebrow: "A propos",
     title: "L'artiste Nadia Chellaoui",
     introParagraphs: [
-      "En 2007, Nadia Chellaoui se consacre pleinement a la peinture, passant de la formation technique a une pratique instinctive.",
-      "Chaque geste du pinceau affirme une expression personnelle et un style de plus en plus distinctif.",
-      "En 2017, animee par un elan de creation continu, elle etend son univers a la maroquinerie avec son premier sac, Calips'Oh.",
-      "Elle poursuit ensuite cette lignee de pieces inspirees de figures mythologiques, dans un dialogue entre symboles, formes et couleurs.",
-      "Cette demarche tisse un lien volontaire entre peinture et artisanat autour de motifs recurrents: le coeur, l'oeil, la bouche, la colombe et l'etoile."
+      "Nadia Chellaoui est une artiste peintre marocaine dont l’univers se distingue par l’intensité émotionnelle de ses œuvres, la puissance du regard et la vibration de la couleur. Autodidacte, elle a développé au fil des années une écriture picturale singulière, où se rencontrent sensibilité, matière, identité et profondeur de l’âme humaine.",
+      "Née à Rabat et basée à Casablanca, elle construit une œuvre profondément habitée, portée par une recherche constante d’authenticité. Ses toiles, souvent marquées par des visages expressifs et une palette vibrante dominée par le bleu, explorent la féminité, la mémoire, l’intériorité et les émotions silencieuses. À travers sa peinture, Nadia Chellaoui cherche moins à représenter qu’à révéler, en donnant forme à l’invisible et en ouvrant un espace de résonance intime avec le regardeur.",
+      "Son parcours artistique s’est déployé au Maroc comme à l’international, à travers plusieurs expositions marquantes. L’année 2025 constitue une étape importante de son rayonnement, avec une exposition collective à Rome en février, une participation à art3f Milan en mars, une présence au MUST Museum – Museo Storico di Lecce en mai, ainsi qu’une exposition personnelle à Venise sur deux mois, moment fort de maturité et de visibilité dans son parcours. Cette dynamique s’est poursuivie avec une exposition collective à Madrid en novembre et une présence annoncée au Carrousel du Louvre à Paris, confirmant l’ancrage international de son œuvre.",
+      "À travers chacune de ses créations, Nadia Chellaoui affirme une peinture sensible et incarnée, où la couleur devient langage, le regard devient passage, et l’œuvre un lieu de rencontre entre émotion, mémoire et humanité."
     ],
     introImage: "https://nadiachellaoui.com/wp-content/uploads/2025/08/nc.jpg",
     introImageAlt: "Portrait de Nadia Chellaoui",
@@ -232,11 +230,10 @@ const aboutContent: Record<Locale, AboutPageContent> = {
     eyebrow: "نبذة",
     title: "الفنانة ناديا شلاوي",
     introParagraphs: [
-      "في عام 2007 كرست ناديا شلاوي نفسها للرسم، وانتقلت من التكوين التقني إلى ممارسة فنية تلقائية.",
-      "كل ضربة فرشاة رسخت أسلوبا شخصيا وهوية بصرية أكثر تميزا.",
-      "وفي 2017 وسعت عالمها الإبداعي إلى فنون الجلد بإطلاق أول حقيبة لها: كاليبسو.",
-      "ثم واصلت تطوير هذه السلسلة بأسماء مستوحاة من الأساطير، في حوار بين الرمز والشكل واللون.",
-      "هذا المسار يربط عمدا بين اللوحة والحرفة عبر رموز متكررة: القلب، العين، الفم، الحمامة، والنجمة."
+      "ناديا شلاوي فنانة تشكيلية مغربية يتميز عالمها الفني بكثافة العاطفة في أعمالها، وقوة النظرة، واهتزاز اللون. وبكونها عصامية، طورت على مر السنوات كتابة تشكيلية متفردة تلتقي فيها الحساسية والمادة والهوية وعمق الروح الإنسانية.",
+      "وُلدت في الرباط وتقيم في الدار البيضاء، وتبني مشروعا فنيا نابضا من الداخل، تقوده رغبة دائمة في الأصالة. لوحاتها، التي كثيرا ما تتسم بوجوه معبرة وبألوان نابضة يهيمن عليها الأزرق، تستكشف الأنوثة والذاكرة والعالم الداخلي والمشاعر الصامتة. ومن خلال الرسم، تسعى ناديا شلاوي أقل إلى التمثيل وأكثر إلى الكشف، فتعطي شكلا لغير المرئي وتفتح فضاءً من الصدى الحميم مع المتلقي.",
+      "وقد امتد مسارها الفني داخل المغرب وخارجه عبر معارض بارزة متعددة. وشكل عام 2025 محطة مهمة في إشعاعها، من خلال معرض جماعي في روما في فبراير، ومشاركة في art3f ميلانو في مارس، وحضور في MUST Museum - Museo Storico di Lecce في مايو، إضافة إلى معرض فردي في البندقية على مدى شهرين، شكّل لحظة نضج وظهور قوية في مسيرتها. واستمرت هذه الدينامية عبر معرض جماعي في مدريد في نوفمبر، وحضور معلن في كاروسيل اللوفر بباريس، بما يؤكد ترسخ أعمالها على الساحة الدولية.",
+      "ومن خلال كل أعمالها، تؤكد ناديا شلاوي على رسم حساس ومتجسد، حيث يصبح اللون لغة، وتصبح النظرة معبرا، ويغدو العمل فضاءً للقاء بين العاطفة والذاكرة والإنسانية."
     ],
     introImage: "https://nadiachellaoui.com/wp-content/uploads/2025/08/nc.jpg",
     introImageAlt: "صورة للفنانة ناديا شلاوي",

@@ -13,7 +13,7 @@ export default function DesktopNav({ locale }: DesktopNavProps) {
   const router = useRouter();
   const items = [
     { id: "li_top_0", label: "HOME", href: `/${locale}`, className: "first top", iconOnly: true },
-    { id: "li_top_1", label: "ARTWORKS", href: `/${locale}/artworks`, className: "top" },
+    { id: "li_top_1", label: "SERIES", href: `/${locale}/artworks`, className: "top" },
     { id: "li_top_2", label: "EXHIBITIONS", href: `/${locale}/exhibitions`, className: "top" },
     { id: "li_top_3", label: "ART FAIRS", href: `/${locale}/art-fairs`, className: "top" },
     { id: "li_top_4", label: "CV", href: `/${locale}/cv`, className: "top" },

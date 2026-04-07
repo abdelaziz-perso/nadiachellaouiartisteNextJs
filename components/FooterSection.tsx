@@ -38,7 +38,7 @@ export default function FooterSection({
 }: FooterSectionProps) {
   const align = isRtl ? "md:text-right md:items-end" : "md:text-left md:items-start";
   const footerNavItems = [
-    { label: "Artworks", href: `/${locale}/artworks` },
+    { label: "Series", href: `/${locale}/artworks` },
     { label: "Exhibitions", href: `/${locale}/exhibitions` },
     { label: "Art fairs", href: `/${locale}/art-fairs` },
     { label: "CV", href: `/${locale}/cv` },

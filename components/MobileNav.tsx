@@ -30,7 +30,7 @@ export default function MobileNav({
   const [isOpen, setIsOpen] = useState(false);
   const navItems = [
     { id: "li_top_0", className: "first top", label: "HOME", href: `/${locale}`, iconOnly: true },
-    { id: "li_top_1", className: "top", label: "ARTWORKS", href: `/${locale}/artworks` },
+    { id: "li_top_1", className: "top", label: "SERIES", href: `/${locale}/artworks` },
     { id: "li_top_2", className: "top", label: "EXHIBITIONS", href: `/${locale}/exhibitions` },
     { id: "li_top_3", className: "top", label: "ART FAIRS", href: `/${locale}/art-fairs` },
     { id: "li_top_4", className: "top", label: "CV", href: `/${locale}/cv` },
