@@ -68,7 +68,7 @@ export default function AnimatedGallery({
           key={`${item.src}-${index}`}
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.25 }}
+          viewport={{ once: true, amount: 0.15 }}
           transition={{ duration: 0.55, delay: index * 0.08 }}
             className="group relative mb-4 break-inside-avoid overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 sm:mb-5 lg:mb-6"
         >

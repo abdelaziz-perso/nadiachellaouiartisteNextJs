@@ -78,15 +78,13 @@ export default async function HomePage({ params }: HomePageProps) {
             {dictionary.works.intro}
           </p>
         </Reveal>
-        <Reveal delay={0.15}>
-          <AnimatedGallery
-            items={worksPhotos}
-            openLabel={dictionary.works.openArtwork}
-            closeLabel={dictionary.works.closeLightbox}
-            previousLabel={dictionary.works.previous}
-            nextLabel={dictionary.works.next}
-          />
-        </Reveal>
+        <AnimatedGallery
+          items={worksPhotos}
+          openLabel={dictionary.works.openArtwork}
+          closeLabel={dictionary.works.closeLightbox}
+          previousLabel={dictionary.works.previous}
+          nextLabel={dictionary.works.next}
+        />
       </section>
 
       <AboutSection
